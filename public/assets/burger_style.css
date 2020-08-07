@@ -42,85 +42,85 @@ body
     }
 }
 
-h1 span:nth-child(1)
+.container h1 span:nth-child(1)
 {
     animation-delay: 0.2s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(2)
+.container h1 span:nth-child(2)
 {
     animation-delay: 0.4s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(3)
+.container h1 span:nth-child(3)
 {
     animation-delay: 0.6s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(4)
+.container h1 span:nth-child(4)
 {
     animation-delay: 0.8s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(5)
+.container h1 span:nth-child(5)
 {
     animation-delay: 1.0s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(6)
+.container h1 span:nth-child(6)
 {
     animation-delay: 1.2s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(7)
+.container h1 span:nth-child(7)
 {
     animation-delay: 1.4s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(8)
+.container h1 span:nth-child(8)
 {
     animation-delay: 1.6s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(9)
+.container h1 span:nth-child(9)
 {
     animation-delay: 1.8s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(10)
+.container h1 span:nth-child(10)
 {
     animation-delay: 2.0s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(11)
+.container h1 span:nth-child(11)
 {
     animation-delay: 2.2s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
-h1 span:nth-child(12)
+.container h1 span:nth-child(12)
 {
     animation-delay: 2.4s;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 grey, 0 15px 5px rgba(0,0,0,0);
 }
 
-.carousel
+.container .carousel
 {
     transform: translateY(-150px);
     height: 500px;
     perspective: 400px;
 }
 
-.carousel .carousel-item
+.container .carousel .carousel-item
 {
     width: 200px;
 }
 
-.carousel .carousel-item img
+.container .carousel .carousel-item img
 {
     width: 100%;
 }
 
-.carousel .carousel-item h3
+.container .carousel .carousel-item h3
 {
     margin: -10px 0 0;
     padding: 0;
@@ -131,4 +131,30 @@ h1 span:nth-child(12)
     font-weight: bold;
     font-size: 2em;
     text-align: center;
+}
+
+#color-override
+{
+    color: yellow;
+}
+
+#lefthead
+{
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#eatbutton, #trashbutton
+{
+    float: right;
+}
+
+#righthead
+{
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
 }

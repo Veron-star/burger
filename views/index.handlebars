@@ -1,93 +1,87 @@
 <div class="container">
-    <h1>
-    <span>H</span>
-    <span>A</span>
-    <span>P</span>
-    <span>P</span>
-    <span>Y</span>
-    <span>*</span>
-    <span>B</span>
-    <span>U</span>
-    <span>R</span>
-    <span>G</span>
-    <span>E</span>
-    <span>R</span>
-</h1>
-<br>
-<div class="carousel">
-    <div class="carousel-item">
-        <img src="/public/assets/img/img1.PNG">
-        <h3>Mushroom Swiss Burger</h3>
+
+    <div class="jumbotron">
+        <h1 id="color-override">Happy Burger</h1>
+        <p id="color-override">Gotta Love Da Burger!</p>
+        <br>
+        <h2 id="color-override">Pick a Burger</h2>
+        <panel>
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="newburger" id="color-override">Order Burger:</label>
+                    <input type="text" id="newburger" name="burger">
+                    <button type="submit" class="btn btn-success" id="addburger"><span class="fa fa-thumbs-up"></span></button>
+                </div>
+            </form>
+        </panel>
     </div>
-    <div class="carousel-item">
-        <img src="/public/assets/img/img2.PNG">
-        <h3>Kawaii Rice Burger</h3>
-    </div>
-    <div class="carousel-item">
-        <img src="/public/assets/img/img3.PNG">
-        <h3>Double Bacon Chesse Burger</h3>
-    </div>
-    <div class="carousel-item">
-        <img src="/public/assets/img/img4.PNG">
-        <h3>Teriyaki Rice Burger</h3>
-    </div>
-    <div class="carousel-item">
-        <img src="/public/assets/img/img5.PNG">
-        <h3>Vegan Burger</h3>
-    </div>
-    <div class="carousel-item">
-        <img src="/public/assets/img/img6.PNG">
-        <h3>Cauliflower Patty Burger</h3>
-    </div>
-</div>
-<br>
-<h2 id="color-override">Pick a Burger</h2>
-<panel>
-    <form class="create-form">
-        <div class="form-group">
-            <label for="newburger" id="color-override">Order:</label>
-            <input type="text" id="newburger" name="burger">
-            <button type="submit" class="btn btn-success" id="addburger"><img src="/public/assets/img/logo.PNG"></button>
-        </div>
-    </form>
-</panel>
-</div>
 
 <div class="row">
-    <div class="col-sm-6">
-        <div class="panel panel-default">
-            <div class="panel heading" id="lefthead"><strong>New Burgers</strong></div>
-            <div class="panel-body">
-                <ul>
-                    {{#each burgers}}
-                    {{#unless devoured}}
-                    <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                    <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><img src="/public/assets/img/logo.PNG"></button>
-                    <hr>
-                    {{/unless}}
-                    {{/each}}
-                </ul>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="lefthead"><strong>New Burgers</strong></div>
+                <div class="panel-body">
+                    <ul>
+                        {{#each burgers}}
+                            {{#unless devoured}}
+                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                                <button type="button" class="eatburger btn btn-warning" id ="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button>
+                                <hr>
+                            {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="righthead"><strong>Devoured Burgers</strong></div>
+                <div class="panel-body">
+                    <ul>
+                        {{#each burgers}}
+                            {{#if devoured}}
+                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                                <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
+                                <hr>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="col-sm-6">
-        <div class="panel panel-default">
-            <div class="panel-heading" id="righthead"><strong>Devoured Burgers</strong></div>
-            <div class="panel-body">
-                <ul>
-                    {{#each burgers}}
-                    {{#if devoured}}
-                    <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                    <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><img src="/public/assets/img/logo.PNG"></button>
-                    <hr>
-                    {{/if}}
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-    </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

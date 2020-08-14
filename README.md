@@ -20,4 +20,4 @@ Create a functional application for a restaurant to let customer input the names
 GitHub Profile: https://github.com/Veron-star/burger
 
 ## Heroku:
-Link: 
+Link: https://dashboard.heroku.com/apps/gourmetburger/deploy/heroku-git

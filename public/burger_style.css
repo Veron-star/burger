@@ -1,13 +1,15 @@
 .jumbotron {
-    background-image: url("/public/img/img2.PNG");
+    background-image: url("/img/img2.PNG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-top: 10px;
+    text-align: center;
 }
 
 .jumbotron > h1 {
-    font-family: 'Creepster', cursive;
+    font-family: cursive;
+    text-align: center;
 }
 
 #newburger {
@@ -15,12 +17,12 @@
 }
 
 #color-override {
-    color: #fff;
+    color: darkred;
 }
 
 #lefthead {
-    background-color: #5cb85c;
-    color: white;
+    background-color: yellow;
+    color: red;
     text-align: center;
     font-size: 1.2em;
 }
@@ -30,8 +32,8 @@
 }
 
 #righthead {
-    background-color: #f0ad4e;
-    color: white;
+    background-color: red;
+    color: yellow;
     text-align: center;
     font-size: 1.2em;
 }
